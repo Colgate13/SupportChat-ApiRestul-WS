@@ -1,11 +1,15 @@
-import { Column, CreateDateColumn, Entity, PrimaryColumn } from "typeorm";
-import { v4 as uuid } from 'uuid'
+/* eslint-disable import/prefer-default-export */
+/* eslint-disable camelcase */
+import {
+  Column, CreateDateColumn, Entity, PrimaryColumn,
+} from 'typeorm';
+import { v4 as uuid } from 'uuid';
 
-
-@Entity("users")
+@Entity('users')
 class User {
     @PrimaryColumn()
     id: string;
+
     @Column()
     email: string;
 
@@ -13,10 +17,10 @@ class User {
     created_at: Date;
 
     constructor() {
-        if (!this.id) {
-            this.id = uuid();
-        }
+      if (!this.id) {
+        this.id = uuid();
+      }
     }
 }
 
-export { User }
+export { User };
