@@ -1,9 +1,11 @@
-import { Repository, EntityRepository } from "typeorm";
-import { Message} from "../entities/Messages";
+/* eslint-disable import/prefer-default-export */
+
+import { Repository, EntityRepository } from 'typeorm';
+import { Message } from '../entities/Messages';
 
 @EntityRepository(Message)
 class MessagesRepository extends Repository<Message> {
 
 }
 
-export { MessagesRepository }
+export { MessagesRepository };

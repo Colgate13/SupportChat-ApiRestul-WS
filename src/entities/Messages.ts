@@ -1,28 +1,36 @@
-import { Column, CreateDateColumn, Entity, JoinColumn, ManyToOne, PrimaryColumn } from "typeorm";
-import { v4 as uuid } from 'uuid'
-import { User } from "./User";
+/* eslint-disable import/prefer-default-export */
+/* eslint-disable camelcase */
+import {
+  Column, CreateDateColumn, Entity, JoinColumn, ManyToOne, PrimaryColumn,
+} from 'typeorm';
+import { v4 as uuid } from 'uuid';
+import { User } from './User';
 
-@Entity("messages")
+@Entity('messages')
 class Message {
     @PrimaryColumn()
     id: string;
+
     @Column()
     text: string;
-    @JoinColumn({name: "user_id"})
+
+    @JoinColumn({ name: 'user_id' })
     @ManyToOne(() => User)
     user: User;
+
     @Column()
     user_id: string;
+
     @Column()
     admin_id: string;
+
     @CreateDateColumn()
     created_at: Date;
 
     constructor() {
-        if (!this.id) {
-            this.id = uuid();
-        }
+      if (!this.id) {
+        this.id = uuid();
+      }
     }
-
 }
-export { Message }
+export { Message };
