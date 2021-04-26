@@ -3,8 +3,9 @@
 <p align="center">
   <a href="#-tecnologias">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-Project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-Installation">How to install and run</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Installation">Installation and run</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-Usage">Usage programs</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Usage">ApiRestFull documentation</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-License">License</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 
 </p>
@@ -21,7 +22,7 @@
 
 RestFul API for chat support, with websocket
 
-## Installation
+## Installation and run
 
 ```yarn 
 git clone https://github.com/Colgate13/SupportChat-ApiRestul-WS.git
@@ -31,13 +32,14 @@ yarn dev
 $ > Server is running in 3333!
 ```
 
-## Usage
+## Usage programs
 
 For send JSON and request's ->  install  [insomnia](https://insomnia.rest/)
 
 For acess SQLlite(Data base) -> install  [Beekeeper Studio](https://www.beekeeper.io/)
 
 
+## ApiRestFull documentation 
 ```nodejs APIrestFull WITH Insomnia 
 
 ```
